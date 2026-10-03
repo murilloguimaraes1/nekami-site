@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Nekami Culinária Japonesa | Plaza Avenida e Iguatemi - São José do Rio Preto</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Gastronomia japonesa com preparo diário, self-service e à la carte. Duas unidades em São José do Rio Preto: Plaza Avenida Shopping e Shopping Iguatemi. Peça no iFood ou WhatsApp.">
+  <meta name="keywords" content="Nekami, sushi rio preto, culinaria japonesa sao jose do rio preto, temaki iguatemi, plaza avenida sushi, ifood sushi rio preto, sashimi, poke">
+  <meta name="author" content="Nekami Culinária Japonesa">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nekami Culinária Japonesa">
+  <meta property="og:title" content="Nekami — Culinária Japonesa">
+  <meta property="og:description" content="Gastronomia japonesa com preparo diário, self-service e à la carte. Duas unidades em São José do Rio Preto: Plaza Avenida Shopping e Shopping Iguatemi. Peça no iFood ou WhatsApp.">
+  <meta property="og:image" content="images/og-share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Banquete de sushi e sashimi Nekami Culinária Japonesa">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nekami — Culinária Japonesa">
+  <meta name="twitter:description" content="Gastronomia japonesa com preparo diário, self-service e à la carte. Duas unidades em São José do Rio Preto: Plaza Avenida Shopping e Shopping Iguatemi.">
+  <meta name="twitter:image" content="images/og-share.jpg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  
+  <!-- Google Fonts: Syne (Display) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Structured Data: Local Restaurant with Two Locations -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Restaurant",
+        "@id": "https://nekamijapones.com.br/#plaza",
+        "name": "Nekami Culinária Japonesa - Plaza Avenida Shopping",
+        "image": "images/hero_sushi.jpg",
+        "telephone": "+5517988126226",
+        "servesCuisine": "Japanese",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. José Munia, 4775 - Jardim Redentor",
+          "postalCode": "15085-350",
+          "addressLocality": "São José do Rio Preto",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "11:00",
+            "closes": "22:00"
+          }
+        ]
+      },
+      {
+        "@type": "Restaurant",
+        "@id": "https://nekamijapones.com.br/#iguatemi",
+        "name": "Nekami Culinária Japonesa - Shopping Iguatemi",
+        "image": "images/hero_sushi.jpg",
+        "telephone": "+5517997246326",
+        "servesCuisine": "Japanese",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Av. Pres. Juscelino K. de Oliveira, 5000",
+          "addressLocality": "São José do Rio Preto",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "11:00",
+            "closes": "22:00"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="page-body">
+
+  <!-- Interactive Background Canvas: Warm Embers & Light Particles -->
+  <canvas id="particles-canvas" class="particles-bg" aria-hidden="true"></canvas>
+
+  <!-- Ambient Cinematic Glow Orbs -->
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+  <!-- FIXED NAVIGATION HEADER -->
+  <header id="site-header" class="site-header" role="banner">
+    <div class="header-container">
+      
+      <!-- Brand Logo Link -->
+      <a href="#inicio" class="brand-logo" aria-label="Nekami Culinária Japonesa - Início">
+        <img src="images/logo-white.png" alt="Nekami Culinária Japonesa Logo" class="brand-logo-img" width="140" height="78">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" role="navigation" aria-label="Navegação Principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#cardapio" class="nav-link">Cardápio</a></li>
+          <li><a href="#unidades" class="nav-link">Unidades</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action CTA Button -->
+      <div class="header-cta-wrapper">
+        <a href="#unidades" class="btn btn-nav" id="btn-nav-order" aria-label="Escolher unidade e pedir">
+          <span class="btn-text">Pedir Agora</span>
+          <svg class="btn-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle" class="mobile-toggle-btn" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-box">
+            <span class="hamburger-line line-1"></span>
+            <span class="hamburger-line line-2"></span>
+            <span class="hamburger-line line-3"></span>
+          </span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-drawer" class="mobile-drawer" role="dialog" aria-modal="true" aria-label="Menu móvel">
+    <div class="drawer-overlay" id="drawer-overlay"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <img src="images/logo-white.png" alt="Nekami Logo" class="drawer-logo" width="120" height="66">
+        <button id="drawer-close" class="drawer-close-btn" aria-label="Fechar menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <ul class="drawer-links">
+          <li><a href="#inicio" class="drawer-link"><span>01</span> Início</a></li>
+          <li><a href="#cardapio" class="drawer-link"><span>02</span> Cardápio</a></li>
+          <li><a href="#unidades" class="drawer-link highlight"><span>03</span> Unidades & Pedidos</a></li>
+          <li><a href="#sobre" class="drawer-link"><span>04</span> Sobre</a></li>
+          <li><a href="#experiencia" class="drawer-link"><span>05</span> Experiência</a></li>
+          <li><a href="#contato" class="drawer-link"><span>06</span> Contato & Horários</a></li>
+        </ul>
+      </nav>
+
+      <div class="drawer-footer">
+        <p class="drawer-hours">
+          <span class="status-indicator"></span> Aberto hoje das 11h às 22h
+        </p>
+        <a href="#unidades" class="btn btn-primary btn-full drawer-cta">
+          Ver Unidades & Pedir
+        </a>
+        <a href="https://www.instagram.com/nekami.riopreto/" target="_blank" rel="noopener noreferrer" class="drawer-social-link" aria-label="Siga o Nekami no Instagram @nekami.riopreto">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          <span>@nekami.riopreto</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- 1. HERO CINEMATOGRÁFICO 3D (Mobile-First Protagonist) -->
+    <section id="inicio" class="hero-section" aria-label="Apresentação Nekami">
+      
+      <!-- Parallax Ken Burns Layered Background -->
+      <div class="hero-bg-container" id="hero-bg-container">
+        <div class="hero-bg-zoom-wrap" id="hero-zoom-wrap">
+          <img src="images/hero_sushi.jpg" 
+               srcset="images/hero_sushi.jpg 1024w, images/hero_sushi_hd.jpg 2048w" 
+               sizes="100vw"
+               alt="Banquete de Sushi e Sashimi Nekami" 
+               class="hero-bg-img" 
+               id="hero-bg-media">
+        </div>
+        <div class="hero-overlay-radial"></div>
+        <div class="hero-overlay-gradient"></div>
+        <div class="hero-grain" aria-hidden="true"></div>
+      </div>
+
+      <!-- Hero Content Layer (Equilibrado, harmonioso e perfeitamente legível) -->
+      <div class="hero-content-wrapper">
+        <div class="hero-container">
+
+          <!-- Badge Status -->
+          <div class="hero-badge reveal-item" data-delay="100">
+            <span class="status-dot"></span>
+            <span class="badge-text">📍 SÃO JOSÉ DO RIO PRETO • 11H ÀS 22H</span>
+          </div>
+
+          <!-- Hero Brand Display: Logo oficial "NEKAMI" + emblema circular + Subtítulo -->
+          <div class="hero-brand-block reveal-item" data-delay="250">
+            <h1 class="sr-only">Nekami Culinária Japonesa — Gastronomia Japonesa em São José do Rio Preto</h1>
+            <div class="hero-logo-box">
+              <img src="images/logo-hero.png" 
+                   srcset="images/logo-hero.png 1x, images/logo-hero-2x.png 2x"
+                   alt="Nekami Culinária Japonesa" 
+                   class="hero-brand-logo" 
+                   width="360" 
+                   height="172">
+            </div>
+            <p class="hero-subtitle">
+              Gastronomia japonesa. Todos os dias.
+            </p>
+          </div>
+
+          <!-- Hero Primary Action Buttons (Directs to #unidades) -->
+          <div class="hero-actions reveal-item" data-delay="400">
+            <a href="#unidades" class="btn btn-primary btn-hero" id="hero-main-cta">
+              <span class="btn-glow-layer"></span>
+              <span class="btn-text">VER UNIDADES E PEDIR</span>
+              <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17l10-10M17 17V7H7"/>
+              </svg>
+            </a>
+
+            <!-- Quick Jump to Menu -->
+            <a href="#cardapio" class="btn btn-ghost" id="hero-menu-cta">
+              <span>Explorar Especialidades</span>
+            </a>
+          </div>
+
+          <!-- Features Micro-badges -->
+          <div class="hero-features reveal-item" data-delay="550">
+            <div class="feature-tag">
+              <span class="feature-icon">🍣</span>
+              <span>Self-Service &amp; À La Carte</span>
+            </div>
+            <div class="feature-tag">
+              <span class="feature-icon">📍</span>
+              <span>Plaza Shopping &amp; Iguatemi</span>
+            </div>
+            <div class="feature-tag">
+              <span class="feature-icon">⚡</span>
+              <span>iFood &amp; WhatsApp</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Cinematic Scroll Indicator with continuous floating bounce animation -->
+        <a href="#cardapio" class="scroll-indicator" aria-label="Rolar para o cardápio">
+          <span class="scroll-label">EXPLORE &darr;</span>
+          <span class="mouse-icon">
+            <span class="mouse-wheel"></span>
+          </span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- 2. SEÇÃO CARDÁPIO EM DESTAQUE (Floating Horizontal Marquee Carousel) -->
+    <section id="cardapio" class="section cardapio-section" aria-label="Especialidades do Cardápio">
+      
+      <div class="container section-header-wrap">
+        <div class="section-tag-wrapper reveal-item">
+          <span class="section-tag">TRADIÇÃO & INOVAÇÃO</span>
+        </div>
+        <h2 class="section-title reveal-item">
+          Cardápio em <span class="text-gradient">Destaque</span>
+        </h2>
+        <p class="section-subtitle reveal-item">
+          Receitas autorais e clássicos preparados todos os dias com ingredientes nobres e frescos.
+        </p>
+      </div>
+
+      <!-- Controls & Drag Cue -->
+      <div class="carousel-meta-bar container">
+        <span class="carousel-hint">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+          Arraste ou deslize para navegar
+        </span>
+        <div class="carousel-nav-arrows">
+          <button id="carousel-prev" class="carousel-arrow-btn" aria-label="Especialidade anterior">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 19l-7-7 7-7"/></svg>
+          </button>
+          <button id="carousel-next" class="carousel-arrow-btn" aria-label="Próxima especialidade">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Floating Horizontal Carousel Container -->
+      <div class="carousel-viewport" id="carousel-viewport" tabindex="0" role="region" aria-label="Carrossel horizontal de pratos do Nekami">
+        <div class="carousel-track" id="carousel-track">
+          <!-- Dynamically populated or rendered items with tilt 3D -->
+          
+          <!-- Card 1: Sushi & Sashimi -->
+          <article class="menu-card tilt-card" data-category="sushi">
+            <div class="card-inner">
+              <div class="card-media">
+                <img src="images/menu_sushi_sashimi.jpg" alt="Sushi e Sashimi artesanais do Nekami" loading="lazy" class="card-img" width="280" height="190">
+                <span class="card-badge">🍣 Destaque</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Sushi &amp; Sashimi</h3>
+                <p class="card-desc">Cortes selecionados, frescor todos os dias.</p>
+                <div class="card-footer">
+                  <a href="#unidades" class="card-cta">
+                    <span>Pedir na unidade</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Temaki -->
+          <article class="menu-card tilt-card" data-category="temaki">
+            <div class="card-inner">
+              <div class="card-media">
+                <img src="images/menu_temaki.jpg" alt="Temaki fresco feito na hora" loading="lazy" class="card-img" width="280" height="190">
+                <span class="card-badge">🌯 Feito na Hora</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Temaki</h3>
+                <p class="card-desc">Enrolado na hora, do seu jeito.</p>
+                <div class="card-footer">
+                  <a href="#unidades" class="card-cta">
+                    <span>Pedir na unidade</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Hot Roll -->
+          <article class="menu-card tilt-card" data-category="hot-roll">
+            <div class="card-inner">
+              <div class="card-media">
+                <img src="images/menu_hot_roll.jpg" alt="Hot Roll crocante com cream cheese e molho tare" loading="lazy" class="card-img" width="280" height="190">
+                <span class="card-badge">🔥 Crocante</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Hot Roll</h3>
+                <p class="card-desc">Empanado e crocante por fora, derretendo por dentro.</p>
+                <div class="card-footer">
+                  <a href="#unidades" class="card-cta">
+                    <span>Pedir na unidade</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Poke -->
+          <article class="menu-card tilt-card" data-category="poke">
+            <div class="card-inner">
+              <div class="card-media">
+                <img src="images/menu_poke.jpg" alt="Poke Bowl com salmão e acompanhamentos frescos" loading="lazy" class="card-img" width="280" height="190">
+                <span class="card-badge">🥗 Leve &amp; Colorido</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Poke</h3>
+                <p class="card-desc">Montagem colorida e leve, no seu ritmo.</p>
+                <div class="card-footer">
+                  <a href="#unidades" class="card-cta">
+                    <span>Pedir na unidade</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Combinados -->
+          <article class="menu-card tilt-card" data-category="combinados">
+            <div class="card-inner">
+              <div class="card-media">
+                <img src="images/menu_combinados.jpg" alt="Combinado completo de sushi e sashimi" loading="lazy" class="card-img" width="280" height="190">
+                <span class="card-badge">🍱 Completo</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Combinados</h3>
+                <p class="card-desc">O melhor do cardápio em um só prato.</p>
+                <div class="card-footer">
+                  <a href="#unidades" class="card-cta">
+                    <span>Pedir na unidade</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Compliance Notice (No fake prices rule) -->
+      <div class="container cardapio-notice-wrap">
+        <div class="cardapio-notice">
+          <span class="notice-icon">ℹ️</span>
+          <span>Consulte o cardápio completo, opções personalizadas e valores atualizados diretamente nos aplicativos oficiais de cada unidade pelo iFood.</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3. SEÇÃO "SOBRE" (Preparo diário, ingredientes selecionados) -->
+    <section id="sobre" class="section sobre-section" aria-label="Sobre o Nekami">
+      <div class="container">
+        <div class="sobre-grid">
+          
+          <!-- Text Content -->
+          <div class="sobre-text-col">
+            <div class="section-tag-wrapper reveal-item">
+              <span class="section-tag">NOSSA ESSÊNCIA</span>
+            </div>
+            
+            <h2 class="section-title reveal-item">
+              Paixão pelo sabor <span class="text-gradient">japonês autêntico</span>.
+            </h2>
+
+            <!-- Exact required copy -->
+            <blockquote class="sobre-quote reveal-item">
+              “Preparo diário, ingredientes selecionados e um cardápio pensado pra quem ama comida japonesa de verdade. Self-service e à la carte — do seu jeito, na sua medida.”
+            </blockquote>
+
+            <p class="sobre-extra reveal-item">
+              No Nekami, a gastronomia japonesa ganha vida com técnicas tradicionais combinadas à modernidade e agilidade que o seu dia a dia pede. Seja para um almoço leve e equilibrado ou para um jantar especial em família, nossas duas unidades em São José do Rio Preto estão preparadas para oferecer a melhor experiência.
+            </p>
+
+            <!-- Key pillars badges -->
+            <div class="sobre-pillars reveal-item">
+              <div class="pillar-item">
+                <span class="pillar-num">01</span>
+                <div>
+                  <h4 class="pillar-title">Frescor Inegociável</h4>
+                  <p class="pillar-desc">Peixes fatiados no dia com rigoroso controle térmico.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">02</span>
+                <div>
+                  <h4 class="pillar-title">Liberdade de Escolha</h4>
+                  <p class="pillar-desc">Praticidade no self-service ou sofisticação no à la carte.</p>
+                </div>
+              </div>
+
+              <div class="pillar-item">
+                <span class="pillar-num">03</span>
+                <div>
+                  <h4 class="pillar-title">2 Unidades em Rio Preto</h4>
+                  <p class="pillar-desc">Plaza Avenida Shopping e Shopping Iguatemi abertos diariamente.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Visual Showcase -->
+          <div class="sobre-visual-col reveal-item">
+            <div class="visual-stack">
+              <div class="visual-card-main tilt-card">
+                <img src="images/chef_flame.jpg" alt="Chef do Nekami montando prato japonês com precisão" loading="lazy" class="visual-img">
+                <div class="visual-overlay"></div>
+                <div class="visual-tag-float">
+                  <span class="tag-pulse"></span>
+                  <span>Preparo Artesanal Diário</span>
+                </div>
+              </div>
+
+              <!-- Decorative floating element -->
+              <div class="visual-badge-floating">
+                <span class="badge-kanji">日本</span>
+                <span class="badge-sub">100% Genuíno</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SEÇÃO EXPERIÊNCIA (MAIS QUE UM PRATO) -->
+    <section id="experiencia" class="section experiencia-section" aria-label="Experiência Nekami">
+      <div class="container">
+        
+        <div class="experiencia-header text-center">
+          <div class="section-tag-wrapper reveal-item">
+            <span class="section-tag">A EXPERIÊNCIA NEKAMI</span>
+          </div>
+          <!-- Exact required title & text -->
+          <h2 class="section-title reveal-item">
+            MAIS QUE UM <span class="text-gradient">PRATO.</span>
+          </h2>
+          <p class="section-subtitle reveal-item">
+            Cada detalhe importa. Do preparo ao ponto certo, criamos sabores que combinam com você.
+          </p>
+        </div>
+
+        <!-- 3D Experience Floating Cards -->
+        <div class="experiencia-grid">
+          
+          <div class="exp-card tilt-card reveal-item" data-delay="100">
+            <div class="exp-card-glow"></div>
+            <div class="exp-icon-box">
+              <span class="exp-icon">🔪</span>
+            </div>
+            <h3 class="exp-card-title">Cortes de Alta Precisão</h3>
+            <p class="exp-card-desc">
+              A espessura milimétrica do sashimi e o calor ideal do arroz shari respeitam a arte milenar japonesa em cada porção servida.
+            </p>
+            <div class="exp-footer">
+              <span class="exp-tag">Técnica &amp; Rigor</span>
+            </div>
+          </div>
+
+          <div class="exp-card tilt-card reveal-item" data-delay="250">
+            <div class="exp-card-glow"></div>
+            <div class="exp-icon-box">
+              <span class="exp-icon">🍱</span>
+            </div>
+            <h3 class="exp-card-title">Self-Service &amp; À La Carte</h3>
+            <p class="exp-card-desc">
+              Total autonomia na escolha dos seus sushis favoritos no balcão refrigerado, ou preparações quentes e autorais preparadas sob encomenda.
+            </p>
+            <div class="exp-footer">
+              <span class="exp-tag">Flexibilidade Total</span>
+            </div>
+          </div>
+
+          <div class="exp-card tilt-card reveal-item" data-delay="400">
+            <div class="exp-card-glow"></div>
+            <div class="exp-icon-box">
+              <span class="exp-icon">🛵</span>
+            </div>
+            <h3 class="exp-card-title">Delivery Rápido &amp; Seguro</h3>
+            <p class="exp-card-desc">
+              Embalagens projetadas para preservar o calor dos pratos quentes e a temperatura ideal dos peixes frescos até a sua mesa.
+            </p>
+            <div class="exp-footer">
+              <span class="exp-tag">Via iFood &amp; WhatsApp</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO UNIDADES (CRÍTICA - 2 CARDS COMPLETOS COM LINKS ESPECÍFICOS) -->
+    <section id="unidades" class="section unidades-section" aria-label="Nossas Unidades em São José do Rio Preto">
+      <div class="container">
+        
+        <div class="section-header-wrap text-center">
+          <div class="section-tag-wrapper reveal-item">
+            <span class="section-tag">ONDE ESTAMOS</span>
+          </div>
+          <!-- Exact required title -->
+          <h2 class="section-title reveal-item">
+            Escolha sua <span class="text-gradient">unidade</span>
+          </h2>
+          <p class="section-subtitle reveal-item">
+            Duas unidades completas em São José do Rio Preto. Selecione a mais perto de você para pedir delivery no iFood ou entrar em contato via WhatsApp.
+          </p>
+        </div>
+
+        <!-- 2 Side-by-Side Cards (Stacked on mobile) -->
+        <div class="unidades-grid" id="unidades-grid">
+          
+          <!-- UNIDADE 1: PLAZA AVENIDA SHOPPING -->
+          <article class="unidade-card tilt-card reveal-item" id="unidade-plaza" data-unit="plaza">
+            <div class="unidade-card-inner">
+              
+              <!-- Card Header -->
+              <div class="unidade-media">
+                <img src="images/unit_plaza.jpg" alt="Nekami no Plaza Avenida Shopping" loading="lazy" class="unidade-img" width="560" height="260">
+                <div class="unidade-media-overlay"></div>
+                <div class="unidade-badge-top">
+                  <span class="unidade-badge">Unidade 01</span>
+                </div>
+                <div class="unidade-status-live">
+                  <span class="status-pulse-dot"></span>
+                  <span>Aberto todos os dias • 11h às 22h</span>
+                </div>
+              </div>
+
+              <!-- Card Body -->
+              <div class="unidade-body">
+                <h3 class="unidade-name">Plaza Avenida Shopping</h3>
+                <p class="unidade-city">São José do Rio Preto - SP</p>
+
+                <!-- Address & Info -->
+                <div class="unidade-info-list">
+                  <div class="info-row">
+                    <svg class="info-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Av. José Munia, 4775 - Jardim Redentor (Praça de Alimentação)</span>
+                  </div>
+
+                  <div class="info-row">
+                    <svg class="info-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>Segunda a Domingo: 11:00 às 22:00</span>
+                  </div>
+
+                  <div class="info-row">
+                    <svg class="info-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                    </svg>
+                    <span>Self-Service, À La Carte e Balcão To-Go</span>
+                  </div>
+                </div>
+
+                <!-- Action Buttons: EXCLUSIVELY PLAZA URLS -->
+                <div class="unidade-actions">
+                  
+                  <!-- Button 1: iFood Plaza -->
+                  <a href="https://www.ifood.com.br/delivery/sao-jose-do-rio-preto-sp/nekami-sushi--temaki-plaza-jardim-redentor/464fe0f1-9ef7-4ac7-abc4-fad70235bfeb" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     class="btn btn-ifood"
+                     id="btn-ifood-plaza"
+                     aria-label="Pedir no iFood - Unidade Plaza Avenida Shopping">
+                    <svg class="btn-brand-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+                    </svg>
+                    <span class="btn-text">Pedir no iFood</span>
+                  </a>
+
+                  <!-- Button 2: WhatsApp Plaza -->
+                  <a href="https://api.whatsapp.com/send/?phone=%2B5517988126226&text&type=phone_number&app_absent=0" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     class="btn btn-whatsapp"
+                     id="btn-wpp-plaza"
+                     aria-label="Falar no WhatsApp - Unidade Plaza Avenida Shopping">
+                    <svg class="btn-brand-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <span class="btn-text">Falar no WhatsApp</span>
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+
+          <!-- UNIDADE 2: SHOPPING IGUATEMI -->
+          <article class="unidade-card tilt-card reveal-item" id="unidade-iguatemi" data-unit="iguatemi" data-delay="200">
+            <div class="unidade-card-inner">
+              
+              <!-- Card Header -->
+              <div class="unidade-media">
+                <img src="images/unit_iguatemi.jpg" alt="Nekami no Shopping Iguatemi" loading="lazy" class="unidade-img" width="560" height="260">
+                <div class="unidade-media-overlay"></div>
+                <div class="unidade-badge-top">
+                  <span class="unidade-badge">Unidade 02</span>
+                </div>
+                <div class="unidade-status-live">
+                  <span class="status-pulse-dot"></span>
+                  <span>Aberto todos os dias • 11h às 22h</span>
+                </div>
+              </div>
+
+              <!-- Card Body -->
+              <div class="unidade-body">
+                <h3 class="unidade-name">Shopping Iguatemi</h3>
+                <p class="unidade-city">São José do Rio Preto - SP</p>
+
+                <!-- Address & Info -->
+                <div class="unidade-info-list">
+                  <div class="info-row">
+                    <svg class="info-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Av. Pres. Juscelino K. de Oliveira, 5000 - Iguatemi</span>
+                  </div>
+
+                  <div class="info-row">
+                    <svg class="info-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <span>Segunda a Domingo: 11:00 às 22:00</span>
+                  </div>
+
+                  <div class="info-row">
+                    <svg class="info-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                      <polyline points="14 2 14 8 20 8"></polyline>
+                      <line x1="16" y1="13" x2="8" y2="13"></line>
+                      <line x1="16" y1="17" x2="8" y2="17"></line>
+                    </svg>
+                    <span>Self-Service Premium, À La Carte &amp; Bebidas</span>
+                  </div>
+                </div>
+
+                <!-- Action Buttons: EXCLUSIVELY IGUATEMI URLS -->
+                <div class="unidade-actions">
+                  
+                  <!-- Button 1: iFood Iguatemi -->
+                  <a href="https://www.ifood.com.br/delivery/sao-jose-do-rio-preto-sp/nekami-sushi--temaki-iguatemi-iguatemi/f99d181d-3497-497a-9081-a89e6e7bed73" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     class="btn btn-ifood"
+                     id="btn-ifood-iguatemi"
+                     aria-label="Pedir no iFood - Unidade Shopping Iguatemi">
+                    <svg class="btn-brand-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14.5v-9l6 4.5-6 4.5z"/>
+                    </svg>
+                    <span class="btn-text">Pedir no iFood</span>
+                  </a>
+
+                  <!-- Button 2: WhatsApp Iguatemi -->
+                  <a href="https://api.whatsapp.com/send/?phone=%2B5517997246326&text&type=phone_number&app_absent=0" 
+                     target="_blank" 
+                     rel="noopener noreferrer" 
+                     class="btn btn-whatsapp"
+                     id="btn-wpp-iguatemi"
+                     aria-label="Falar no WhatsApp - Unidade Shopping Iguatemi">
+                    <svg class="btn-brand-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <span class="btn-text">Falar no WhatsApp</span>
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. SEÇÃO FINAL DE CONVERSÃO -->
+    <section id="conversao" class="section conversao-section" aria-label="Chamada Final para Pedido">
+      <div class="conversao-bg-effect"></div>
+      <div class="container conversao-container text-center">
+        
+        <!-- Large Official Logo -->
+        <div class="conversao-logo-wrap reveal-item">
+          <img src="images/logo-white.png" alt="Nekami Culinária Japonesa" class="conversao-logo" width="220" height="122">
+        </div>
+
+        <!-- Required Title -->
+        <h2 class="conversao-title reveal-item">
+          SEU PRÓXIMO PEDIDO <span class="text-gradient">É AQUI.</span>
+        </h2>
+
+        <!-- Required Text -->
+        <p class="conversao-desc reveal-item">
+          Escolha sua unidade mais próxima e peça agora.
+        </p>
+
+        <!-- Button directing back to units -->
+        <div class="conversao-cta-wrap reveal-item">
+          <a href="#unidades" class="btn btn-primary btn-large btn-glow">
+            <span class="btn-text">ESCOLHER UNIDADE &amp; PEDIR</span>
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M7 17l10-10M17 17V7H7"/>
+            </svg>
+          </a>
+        </div>
+
+        <p class="conversao-subnote reveal-item">
+          Atendimento de segunda a domingo • 11h às 22h
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="contato" class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      
+      <!-- Brand & About Column -->
+      <div class="footer-col footer-brand">
+        <a href="#inicio" class="footer-logo-link">
+          <img src="images/logo-white.png" alt="Nekami Culinária Japonesa Logo" class="footer-logo" width="160" height="88">
+        </a>
+        <p class="footer-tagline">
+          Gastronomia japonesa vibrante, apetitosa e contemporânea. Preparo diário com ingredientes de excelência em São José do Rio Preto.
+        </p>
+        <div class="footer-hours-badge">
+          <span class="status-pulse-dot"></span>
+          <span>Aberto todos os dias das 11h às 22h</span>
+        </div>
+        <div class="footer-social-wrap">
+          <a href="https://www.instagram.com/nekami.riopreto/" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Siga o Nekami no Instagram @nekami.riopreto">
+            <svg class="social-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span>Instagram @nekami.riopreto</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Navigation Column -->
+      <div class="footer-col footer-links-col">
+        <h4 class="footer-title">Navegação</h4>
+        <ul class="footer-nav">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#cardapio">Cardápio em Destaque</a></li>
+          <li><a href="#sobre">Sobre o Nekami</a></li>
+          <li><a href="#experiencia">Nossa Experiência</a></li>
+          <li><a href="#unidades">Escolher Unidade</a></li>
+        </ul>
+      </div>
+
+      <!-- Plaza Avenida Location Column -->
+      <div class="footer-col footer-unit-col">
+        <h4 class="footer-title">Plaza Avenida Shopping</h4>
+        <p class="footer-address">
+          Av. José Munia, 4775 - Jd. Redentor<br>
+          São José do Rio Preto - SP • CEP 15085-350
+        </p>
+        <div class="footer-unit-links">
+          <a href="https://www.ifood.com.br/delivery/sao-jose-do-rio-preto-sp/nekami-sushi--temaki-plaza-jardim-redentor/464fe0f1-9ef7-4ac7-abc4-fad70235bfeb" target="_blank" rel="noopener noreferrer" class="footer-btn-link ifood-text">
+            <span>Pedir no iFood</span>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B5517988126226&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="footer-btn-link wpp-text">
+            <span>WhatsApp Plaza</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Shopping Iguatemi Location Column -->
+      <div class="footer-col footer-unit-col">
+        <h4 class="footer-title">Shopping Iguatemi</h4>
+        <p class="footer-address">
+          Av. Pres. Juscelino K. de Oliveira, 5000<br>
+          São José do Rio Preto - SP
+        </p>
+        <div class="footer-unit-links">
+          <a href="https://www.ifood.com.br/delivery/sao-jose-do-rio-preto-sp/nekami-sushi--temaki-iguatemi-iguatemi/f99d181d-3497-497a-9081-a89e6e7bed73" target="_blank" rel="noopener noreferrer" class="footer-btn-link ifood-text">
+            <span>Pedir no iFood</span>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B5517997246326&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" class="footer-btn-link wpp-text">
+            <span>WhatsApp Iguatemi</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Disclaimer & Copyright -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          &copy; 2026 Nekami Culinária Japonesa. Todos os direitos reservados.
+        </p>
+        <p class="disclaimer-text">
+          Fotos meramente ilustrativas. Cardápio completo com itens, valores e taxa de entrega disponíveis diretamente nos aplicativos oficiais de cada unidade no iFood.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>

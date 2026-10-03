@@ -1,0 +1,22 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Vercel & Deployment Caches
+.vercel/
+
+# Editor & IDE Configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary Test & Scratch Files
+scratch/
+tmp_*/
+*.log
+*.tmp
+*.bak
